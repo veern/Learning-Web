@@ -1,0 +1,57 @@
+/* This is a universal selector, that can be applied to any element */
+* {
+    color: purple;
+}
+
+/* This selector would apply to all divs */
+div {
+    color: white;
+}
+
+/* This is an example of class selectors, which apply only to elements of specific class defined within an html file, in this case "alert-text" */ 
+/* You can add as many classes to an element as you want, the syntax is: <div class="alert-text my_text severe_alert">...</div> */
+.alert-text {
+    color: red;
+}
+
+/* This is an example of ID selector, which apply only to an element with specific id, in this case "title" */
+#title {
+    background-color: red;
+}
+
+/* Generally, classes should be used much more often than IDs because an ID has to be unique for a single page, which in a bigger project can lead to many problems */
+
+/* If two selectors share common declarations, it is possible to group them like so: */
+
+.read,
+.unread {
+    color: white;
+    background-color: black;
+}
+
+.read {
+    font-size: 20;
+}
+
+.unread {
+    font-size: 30;
+}
+
+/* It is also possible to add a set of rules to an element that has two or more classes, it's called a chaining selector */
+/* In this example, only an element that is of class subsection and header will have these rules applied, not an element that is of class subsection and preview for example */
+/* It does not work for more than one type selector */
+.subsection.header {
+    color: red;
+}
+
+/* It can also be chained with one or more classes with one or more ids */
+
+.subsection#preview {
+    color: blue;
+}
+
+/* Descendant combinator applies the rule to a child element (not to the parent!), when the parent and child class match the rule set */
+
+.ancestor .contents {
+    color: aliceblue;
+}
