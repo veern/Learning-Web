@@ -1,3 +1,56 @@
-<html>
-    
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <!-- HTML comment - headings count all the way up to 6 -->
+        <h1>Welcome</h1>
+
+        <!-- <p></p> is a paragraph tag -->
+        <!-- <strong></strong> makes text bold and adds meaning, <b></b> just makes the text bold -->
+        <p><strong>Lorem ipsum</strong></p>
+
+        <!-- <em></em> makes text italic and adds meaning, <i></i> just makes the text italic -->
+        <!-- Helps people with vision impairment, makes text-to-speach more accurate -->
+        <p><em>dolor</em></p>
+        
+        <!-- <ul></ul> makes an unordered list with <li>item</li> -->
+        <!-- all of the lists shown below can be nested -->
+        <ul>
+            <li>Item #1</li>
+            <li>Item #2</li>
+            <li>Item #3</li>
+        </ul>
+
+        <!-- <ol></ol> makes an unordered list with <li>item</li> -->
+        <!-- start makes the first item that number and then counts upwards -->
+        <!-- reversed makes the ordering reversed -->
+        <!-- value makes the value of an item to be passed by hand -->
+        <ol start="10" reversed>
+            <li>Item #1</li>
+            <li>Item #2</li>
+            <li value="100">Item #3</li>
+        </ol>
+
+        <!-- <dl></dl> makes a description list that sets a word/sentence/value at <dt></dt> and its description at <dd></dd> -->
+        <dl>
+            <dt>Study</dt>
+            <dd>The devotion of time and attention to acquiring knowledge on an academic subject, especially by means of books</dd>
+            <dt>design</dt>
+            <dd>A plan or drawing produced to show the look and function or workings of a building, garment, or other object before it is built or made</dd>
+        </dl>
+
+        <!-- <a></a> is an anchor element. href="" is an address to which the element will redirect the user -->
+        <!-- Absolute link is made up of: "Protocol://domain/path", as seen below. It redirects to other pdf/html/images that are not on the same page as this one -->
+        <a href="https://www.youtube.com">Absolute link</a>
+        <!-- Relative links redirect to other pdf/html/images that are on the same page/directory as this one or the directory is given -->
+        <!-- By adding ./ you are specifying to your code that it should start looking for the file/directory relative to the current directory -->
+        <a href="./pages/about.html">Relative link</a>
+
+        <!-- <img src=""> is an empty tag, which means it does not have a closing tag. It is used to place an image on to a web page -->
+        <!-- alt="" is an alternative text, used when image cannot be loaded or it can also be used to describe an image to visually impaired users -->
+        <p><img src="images/dog.jpg" alt="Picture of a dog on a yellow background" width="300"></p>
+    </body>
 </html>
