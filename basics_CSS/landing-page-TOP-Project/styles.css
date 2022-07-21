@@ -1,0 +1,186 @@
+html, body {
+    height: 100%;
+    font-size: 12px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.header-links {
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+}
+
+header, content, .content-top, .content-top-mid, .content-bottom-mid, .content-bottom, footer {
+    padding: 5px 80px;
+}
+
+header {
+    background-color: darkblue;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    height: 100%;
+}
+
+.content-top {
+    background-color: darkblue;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.text-with-button {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 80px;
+    flex: 1;
+}
+
+.title {
+    color: white;
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.subtext {
+    color: white;
+}
+
+.image-placeholder {
+    background-color: aqua;
+    flex: 1 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+}
+
+button {
+    background-color: green;
+    border: 0;
+    border-radius: 2px;
+    color: white;
+    height: fit-content;
+    width: fit-content;
+}
+
+.content-top-mid {
+    background-color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-top-mid .title {
+    color: black;
+    padding: 20px 0;
+}
+
+.image-container {
+    display: flex;
+    gap: 20px;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rounded-box + span {
+    padding: 5px 10px 50px;
+    text-align: center;
+}
+
+.rounded-box {
+    border: 2px solid green;
+    border-radius: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.content-bottom-mid {
+    background-color: lightgray;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 28px;
+}
+
+.author {
+    align-self:flex-end;
+}
+
+.content-bottom {
+    background-color: white;
+    flex: 0.8;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ad {
+    background-color: green;
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.ad .title {
+    color: black;
+}
+
+.ad-subtext {
+    color: black;
+}
+
+.ad button {
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+footer {
+    flex-shrink: 0;
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}

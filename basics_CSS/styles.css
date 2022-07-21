@@ -55,3 +55,27 @@ div {
 .ancestor .contents {
     color: aliceblue;
 }
+
+/* Adjacent sibling combinator applies rules to an element that comes directly after the paragraph (in this scenario) */
+h1 + p {
+    font-size: 200%;
+  }
+
+/* Properties can be used in their shorthand version, for example padding or background: */
+pad {
+    padding: 10px 15px 20px 10px;
+    background: red url(bg-graphic.png) 10px 10px repeat-x fixed;
+}
+/* which is equivalent to: */
+pad {
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+
+    background-color: red;
+    background-image: url(bg-graphic.png);
+    background-position: 10px 10px;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+}
